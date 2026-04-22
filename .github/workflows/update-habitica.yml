@@ -27,6 +27,7 @@ jobs:
         env:
           HABITICA_USER_ID: ${{ secrets.HABITICA_USER_ID }}
           HABITICA_API_TOKEN: ${{ secrets.HABITICA_API_TOKEN }}
+          HABITICA_CLIENT: ${{ secrets.HABITICA_CLIENT }}
         run: python scripts/update_habitica_readme.py
 
       - name: Commit changes

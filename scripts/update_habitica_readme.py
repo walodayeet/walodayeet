@@ -9,42 +9,51 @@ import requests
 README = Path(__file__).resolve().parents[1] / 'README.md'
 START = '<!-- HABITICA:START -->'
 END = '<!-- HABITICA:END -->'
-API = 'https://habitica.com/api/v3/user'
+USER_API = 'https://habitica.com/api/v3/user'
+DAILIES_API = 'https://habitica.com/api/v3/tasks/user?type=dailys'
 
 
-def fetch_user() -> dict:
-    user_id = os.environ['HABITICA_USER_ID']
-    token = os.environ['HABITICA_API_TOKEN']
+def get_headers() -> dict[str, str]:
     headers = {
-        'x-api-user': user_id,
-        'x-api-key': token,
+        'x-api-user': os.environ['HABITICA_USER_ID'],
+        'x-api-key': os.environ['HABITICA_API_TOKEN'],
         'content-type': 'application/json',
     }
-    response = requests.get(API, headers=headers, timeout=20)
-    response.raise_for_status()
-    payload = response.json()['data']
-    stats = payload.get('stats', {})
-    items = payload.get('items', {})
-    current_pet = items.get('currentPet', 'none')
-    current_mount = items.get('currentMount', 'none')
+    client = os.environ.get('HABITICA_CLIENT')
+    if client:
+        headers['x-client'] = client
+    return headers
+
+
+def fetch_level_and_remaining_dailies() -> dict[str, int]:
+    headers = get_headers()
+
+    user_response = requests.get(USER_API, headers=headers, timeout=20)
+    user_response.raise_for_status()
+    user_payload = user_response.json()['data']
+    level = int(user_payload.get('stats', {}).get('lvl', 0))
+
+    dailies_response = requests.get(DAILIES_API, headers=headers, timeout=20)
+    dailies_response.raise_for_status()
+    dailies = dailies_response.json().get('data', [])
+
+    remaining = sum(
+        1
+        for task in dailies
+        if task.get('isDue') and not task.get('completed', False)
+    )
+
     return {
-        'level': stats.get('lvl', 'unknown'),
-        'class': stats.get('class', 'unknown'),
-        'gold': round(float(stats.get('gp', 0)), 2),
-        'pet': current_pet,
-        'mount': current_mount,
+        'level': level,
+        'remaining_daily_tasks': remaining,
     }
 
 
-def build_block(user: dict) -> str:
+def build_block(data: dict[str, int]) -> str:
     return '\n'.join([
         START,
-        f"- Level: {user['level']}",
-        f"- Class: {user['class']}",
-        f"- Gold: {user['gold']}",
-        f"- Pet: {user['pet']}",
-        f"- Mount: {user['mount']}",
-        '- Focus: consistency, study, infrastructure',
+        f"- Level: {data['level']}",
+        f"- Remaining daily tasks: {data['remaining_daily_tasks']}",
         END,
     ])
 
@@ -57,9 +66,8 @@ def update_readme(block: str) -> None:
 
 
 def main() -> None:
-    user = fetch_user()
-    block = build_block(user)
-    update_readme(block)
+    data = fetch_level_and_remaining_dailies()
+    update_readme(build_block(data))
     print('README Habitica block updated.')
 
 

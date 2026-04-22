@@ -54,7 +54,7 @@
     <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="48" height="48" alt="JavaScript" /><br/>JavaScript</td>
     <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="48" height="48" alt="HTML" /><br/>HTML</td>
     <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="48" height="48" alt="CSS" /><br/>CSS</td>
-    <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" width="48" height="48" alt="Tailwind" /><br/>Tailwind</td>
+    <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" width="48" height="48" alt="Tailwind CSS" /><br/>Tailwind</td>
     <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" width="48" height="48" alt="PostgreSQL" /><br/>PostgreSQL</td>
     <td align="center" width="96"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" width="48" height="48" alt="SQLite" /><br/>SQLite</td>
   </tr>
@@ -75,7 +75,7 @@
 </p>
 
 <p align="center">
-  <img height="220" src="https://github-readme-streak-stats.herokuapp.com/?user=walodayeet&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+  <img height="220" src="https://streak-stats.demolab.com?user=walodayeet&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
 <p align="center">
@@ -85,9 +85,8 @@
 ## Habitica
 
 <!-- HABITICA:START -->
-- Level: coming soon
-- Class: coming soon
-- Focus: consistency, study, infrastructure
+- Level: 7
+- Remaining daily tasks: 7
 <!-- HABITICA:END -->
 
 ## Current Direction
