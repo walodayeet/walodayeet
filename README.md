@@ -1,93 +1,60 @@
-<h1 align="center">Hi, I'm Walo</h1>
+<h1 align="center">walodayeet</h1>
 <p align="center">
-  CS student at VGU building practical systems with TypeScript, Python, Docker, and Linux.
+  CS student at VGU building practical systems, self-hosted infrastructure, and automation.
 </p>
 
 <p align="center">
-  I run a home server, work across multiple VPSes, and prefer shipping useful infrastructure over pretending with toy projects.
+  Home server • VPS fleet • Docker • AI tooling
 </p>
 
 <p align="center">
-  <a href="https://ko-fi.com/walodayeet">Support me on Ko-fi</a>
+  <a href="https://ko-fi.com/walodayeet">Ko-fi</a>
 </p>
 
 ---
 
-## About Me
+## About
 
-- CS student at **VGU** focused on building practical software and infrastructure.
-- I work across **self-hosted systems**, **Dockerized services**, and **Linux-first workflows**.
-- I like projects that are actually deployed, maintained, and useful.
-- My stack leans heavily toward **TypeScript** and **Python**, with strong interest in backend systems, automation, and infra.
+- Building and maintaining real systems on home-server and VPS infrastructure
+- Focused on infrastructure reliability, AI tooling, and practical automation
+- Prefer TypeScript-first workflows, then Python, Node.js, and Docker
 
-## Current Focus
+## Favorite Tech
 
-- Building cleaner backend and automation workflows
-- Shipping practical projects on home-server and VPS infrastructure
-- Improving depth in TypeScript, Python, Node.js, and Docker
-- Turning personal systems into public, well-documented work
-
-## Favorite Techs
-
-**TypeScript** → **Python** → **Node.js** → **Docker** → **Debian** → **Ubuntu**
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=ts,py,nodejs,docker,debian,ubuntu&theme=dark" alt="Favorite tech" />
+</p>
 
 ## Toolbox
 
-- **Languages:** TypeScript, Python, JavaScript
-- **Frontend:** Tailwind CSS, CSS, HTML
-- **Databases:** PostgreSQL, SQLite, Redis, Convex
-- **Backend:** Node.js, Express, Nginx
-- **Testing / Monitoring:** Playwright, Sentry
-- **DevOps / Ops:** Docker, Bash, Linux scripting, Git
+<p align="center">
+  <img src="https://skillicons.dev/icons?i=tailwind,html,css,postgres,sqlite,redis,nginx,express,playwright,sentry,bash,git,linux&theme=dark" alt="Toolbox" />
+</p>
 
 ## GitHub Activity
 
-<p>
-  <img height="160" src="https://github-readme-stats.vercel.app/api?username=walodayeet&show_icons=true&theme=transparent&show=reviews,prs_merged,prs_merged_percentage&cache_seconds=21600" alt="GitHub stats" />
-  <img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=walodayeet&layout=compact&langs_count=6&size_weight=0.5&count_weight=0.5&theme=transparent&cache_seconds=21600" alt="Top languages" />
+<p align="center">
+  <img height="190" src="https://github-readme-stats.vercel.app/api?username=walodayeet&show_icons=true&include_all_commits=true&count_private=true&rank_icon=github&theme=tokyonight&hide_border=true&cache_seconds=21600" alt="GitHub stats" />
 </p>
 
-> [!NOTE]
-> The language card reflects repository language composition, not raw skill level.
+<p align="center">
+  <img height="190" src="https://streak-stats.demolab.com?user=walodayeet&theme=tokyonight&hide_border=true" alt="GitHub streak" />
+</p>
 
 ## Habitica
-
-This section is designed to be updated automatically through GitHub Actions.
 
 <!-- HABITICA:START -->
 - Level: _coming soon_
 - Class: _coming soon_
-- Gold: _coming soon_
-- Current pet / mount: _coming soon_
-- Focus: study, infrastructure, consistency
+- Focus: consistency, study, infrastructure
 <!-- HABITICA:END -->
 
-> [!TIP]
-> Best implementation: use a scheduled GitHub Action to fetch sanitized Habitica data and rewrite only the block above.
+## Current Direction
 
-## What I'm Building Toward
-
-- Robust backend systems
-- Better self-hosted infrastructure
-- Cleaner automation pipelines
-- Real-world projects that survive beyond the prototype stage
-
-## Support
-
-If you find my work useful or want to support future builds:
-
-- **Ko-fi:** https://ko-fi.com/walodayeet
-
-## Socials
-
-Coming later.
+- Self-hosted infra
+- AI agents and tooling
+- Automation that survives real use
 
 ---
 
-## Setup Notes
-
-For this to show on your GitHub profile, create a **public** repository named exactly:
-
-`walodayeet/walodayeet`
-
-Then place this content in the root `README.md`.
+Create a public repo named `walodayeet/walodayeet` and place this in the root `README.md`.
