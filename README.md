@@ -82,13 +82,6 @@
   <img height="220" src="https://github-readme-stats.vercel.app/api/top-langs/?username=walodayeet&layout=compact&langs_count=6&theme=tokyonight&hide_border=true&cache_seconds=21600" alt="Top languages" />
 </p>
 
-## Habitica
-
-<!-- HABITICA:START -->
-- Level: 7
-- Remaining daily tasks: 7
-<!-- HABITICA:END -->
-
 ## Current Direction
 
 - self-hosted infra
